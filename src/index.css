@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Hind Siliguri", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Hind Siliguri", "Inter", sans-serif;
+
+  --color-agency-black: #020617;
+  --color-agency-midnight: #0f172a;
+  --color-agency-purple: #8b5cf6;
+  --color-agency-blue: #3b82f6;
+  --color-agency-accent: #d946ef;
+  --color-text-dim: #94a3b8;
+}
+
+@layer base {
+  body {
+    @apply bg-agency-black text-[#f8fafc] selection:bg-agency-purple/30 font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-extrabold tracking-tight text-[#f8fafc];
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-[#0f172a]/60 backdrop-blur-[10px] border border-white/10 rounded-2xl shadow-2xl;
+  }
+
+  .glow-purple {
+    @apply absolute -z-10 blur-[120px] bg-agency-purple/15 rounded-full;
+  }
+
+  .glow-blue {
+    @apply absolute -z-10 blur-[120px] bg-agency-blue/15 rounded-full;
+  }
+
+  .glow-accent {
+    @apply absolute -z-10 blur-[120px] bg-agency-accent/10 rounded-full;
+  }
+
+  .btn-primary {
+    @apply relative overflow-hidden px-8 py-3 rounded-full font-semibold transition-all duration-300
+           bg-gradient-to-br from-agency-purple to-agency-blue text-white
+           shadow-[0_4px_15px_rgba(139,92,246,0.3)] hover:shadow-[0_4px_25px_rgba(139,92,246,0.5)]
+           active:scale-95 border-none;
+  }
+
+  .btn-secondary {
+    @apply px-8 py-3 rounded-full font-semibold border border-white/10 bg-transparent text-[#f8fafc]
+           hover:bg-white/5 transition-all active:scale-95;
+  }
+
+  .nav-link {
+    @apply text-sm font-medium text-[#94a3b8] hover:text-[#f8fafc] transition-colors cursor-pointer;
+  }
+
+  .tag {
+    @apply text-[10px] uppercase tracking-[1px] bg-white/5 text-agency-purple px-2 py-1 rounded-[4px] font-bold;
+  }
+
+  .highlight {
+    @apply text-agency-purple;
+  }
+}
