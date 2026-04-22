@@ -82,7 +82,7 @@ export default function ServiceDetailPage({ serviceId, onBack }: Props) {
             <div className="flex gap-4 flex-wrap">
 
               <a
-                href="https://wa.me/01833282575"
+                href="https://wa.me/+8801903771813"
                 target="_blank"
                 className="btn-primary px-8 h-12 flex items-center gap-2"
               >
