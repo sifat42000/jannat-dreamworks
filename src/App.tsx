@@ -195,10 +195,11 @@ export default function App() {
                 />
               )}
             </button>
+
           ))}
         </div>
       </div>
-
+       {/* main div */}
       <main className="relative z-10">
         {activePage === 'home' && (
           <div className="animate-in fade-in duration-700">
