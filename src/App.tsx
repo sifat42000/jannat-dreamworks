@@ -232,7 +232,7 @@ export default function App() {
                       যোগাযোগ করুন <ChevronRight className="w-4 h-4" />
                     </button>
                     <a
-                      href="https://wa.me/01903771813"
+                      href="https://wa.me/+8801903771813"
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={() => {
