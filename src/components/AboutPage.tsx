@@ -215,7 +215,7 @@ export default function AboutPage() {
               যোগাযোগ করুন <ArrowRight className="w-5 h-5" />
             </a> */}
             <a
-              href="https://wa.me/01833282575"
+              href="https://wa.me/01903771813"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => {

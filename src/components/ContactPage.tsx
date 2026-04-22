@@ -20,10 +20,10 @@ export default function ContactPage() {
     {
       icon: <MessageCircle className="w-8 h-8" />,
       title: "WhatsApp",
-      value: "01833282575",
+      value: "01903771813",
       desc: "দ্রুত উত্তরের জন্য এখনই মেসেজ দিন",
       action: "মেসেজ পাঠান",
-      link: "https://wa.me/01833282575",
+      link: "https://wa.me/01903771813",
       color: "bg-green-500/10 text-green-500",
       primary: true
     },
@@ -39,7 +39,7 @@ export default function ContactPage() {
     {
       icon: <Mail className="w-8 h-8" />,
       title: "ইমেইল",
-      value: "jannatdreamwork@gmail.com",
+      value: "jannatdreamworks@gmail.com",
       desc: "যেকোনো প্রপোজাল বা তথ্যের জন্য",
       action: "মেইল পাঠান",
       link: "mailto:jannatdreamwork@gmail.com",

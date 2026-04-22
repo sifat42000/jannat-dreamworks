@@ -41,25 +41,19 @@ import PricingPage from "./components/PricingPage";
 
 // Full Agency Data
 const SERVICES = [
-  {
-    id: "ai-video",
-    title: "🤖 AI-Powered Video Production",
-    desc: "আমরা AI প্রযুক্তি ব্যবহার করে তৈরি করি high-converting video content. যা শুধু সুন্দর না, বরং আপনার business-এর জন্য attention, engagement ও real sales নিয়ে আসে। Fast production, কম খরচ এবং premium quality সব একসাথে।",
-    icon: <Video />
-  },
-  {
-    id: "script-writing",
-    title: "🎥 Creative Video & Ad Production",
-    desc: "কাস্টম কনটেন্ট ও স্টোরিটেলিং এর মাধ্যমে আমরা আপনার ব্র্যান্ডকে ইউনিক করে তুলি।",
-    icon: <PenTool />
-  },
-  {
+   {
     id: "web-design",
     title: "🌐 Website Design & Development",
     desc: "একটি প্রফেশনাল ওয়েবসাইটই আপনার ব্র্যান্ডের প্রথম ইমপ্রেশন। আমরা এমন একটি প্ল্যাটফর্ম তৈরি করি যেখানে ডিজাইন, স্পিড ও কনভার্সন একসাথে কাজ করে আপনার ব্যবসাকে পরবর্তী লেভেলে নিয়ে যেতে।",
     icon: <Globe />
   },
   {
+    id: "ai-video",
+    title: "🤖 AI-Powered Video Production",
+    desc: "আমরা AI প্রযুক্তি ব্যবহার করে তৈরি করি high-converting video content. যা শুধু সুন্দর না, বরং আপনার business-এর জন্য attention, engagement ও real sales নিয়ে আসে। Fast production, কম খরচ এবং premium quality সব একসাথে।",
+    icon: <Video />
+  },
+   {
     id: "marketing",
     title: "📊 Meta Ads & Digital Marketing",
     desc: "আপনার ব্যবসার জন্য শুধু বিজ্ঞাপন চালানো নয়,আমরা তৈরি করি এমন স্ট্র্যাটেজি যা সঠিক অডিয়েন্সে পৌঁছে, লিড আনে এবং সেলসে রূপ নেয়। Data-driven decision ও smart targeting দিয়ে আপনার প্রতিটি টাকাকে করি profitable।",
@@ -70,7 +64,16 @@ const SERVICES = [
     title: "🎨 Branding & Content Creation",
     desc: "আপনার ব্র্যান্ডের জন্য আমরা তৈরি করি creative, engaging এবং conversion-focused video ads যা প্রথম ৩ সেকেন্ডেই attention ধরে এবং দর্শককে কাস্টমারে পরিণত করে। Storytelling, strategy এবং marketing psychology সব একসাথে।",
     icon: <Mic2 />
-  }
+  },
+  {
+    id: "script-writing",
+    title: "🎥 Creative Video & Ad Production",
+    desc: "কাস্টম কনটেন্ট ও স্টোরিটেলিং এর মাধ্যমে আমরা আপনার ব্র্যান্ডকে ইউনিক করে তুলি।",
+    icon: <PenTool />
+  },
+ 
+ 
+  
 ];
 
 const PRICING = [
@@ -229,7 +232,7 @@ export default function App() {
                       যোগাযোগ করুন <ChevronRight className="w-4 h-4" />
                     </button>
                     <a
-                      href="https://wa.me/01833282575"
+                      href="https://wa.me/01903771813"
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={() => {
@@ -472,7 +475,7 @@ export default function App() {
                     <Sparkles className="w-5 h-5" /> যোগাযোগ করুন
                   </button>
                   <a
-                    href="https://wa.me/01833282575"
+                    href="https://wa.me/01903771813"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => {
@@ -609,7 +612,7 @@ export default function App() {
             </motion.div>
           </AnimatePresence>
           <a
-            href="https://wa.me/01833282575"
+            href="https://wa.me/01903771813"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => {
