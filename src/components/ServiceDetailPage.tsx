@@ -229,7 +229,7 @@ export default function ServiceDetailPage({ serviceId, onBack }: Props) {
         </p>
 
         <a
-          href="https://wa.me/01903771813"
+          href="https://wa.me/+8801903771813"
           onClick={() => {
             if ((window as any).fbq) {
               (window as any).fbq("track", "Lead");

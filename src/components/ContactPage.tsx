@@ -23,7 +23,7 @@ export default function ContactPage() {
       value: "01903771813",
       desc: "দ্রুত উত্তরের জন্য এখনই মেসেজ দিন",
       action: "মেসেজ পাঠান",
-      link: "https://wa.me/01903771813",
+      link: "https://wa.me/+8801903771813",
       color: "bg-green-500/10 text-green-500",
       primary: true
     },

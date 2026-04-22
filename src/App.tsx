@@ -475,7 +475,7 @@ export default function App() {
                     <Sparkles className="w-5 h-5" /> যোগাযোগ করুন
                   </button>
                   <a
-                    href="https://wa.me/01903771813"
+                    href="https://wa.me/+8801903771813"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => {
@@ -612,7 +612,7 @@ export default function App() {
             </motion.div>
           </AnimatePresence>
           <a
-            href="https://wa.me/01903771813"
+            href="https://wa.me/+8801903771813"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => {
