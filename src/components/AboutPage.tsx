@@ -174,7 +174,7 @@ export default function AboutPage() {
               <div className="absolute -inset-4 bg-agency-purple/20 rounded-full blur-2xl" />
               <div className="w-40 h-40 rounded-full glass-card border-4 border-agency-purple/30 overflow-hidden relative">
                 <img
-                  src="https://picsum.photos/seed/founder/400/400"
+                  src="https://i.ibb.co.com/9krV2pMP/team-2.jpg"
                   alt="Founder"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -215,7 +215,7 @@ export default function AboutPage() {
               যোগাযোগ করুন <ArrowRight className="w-5 h-5" />
             </a> */}
             <a
-              href="https://wa.me/01903771813"
+              href="https://wa.me/+8801903771813"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => {
