@@ -407,7 +407,7 @@ export default function App() {
                 <div className="relative group pt-12 md:pt-0">
                   <div className="aspect-square glass-card rotate-3 flex items-center justify-center">
                     <div className="w-3/4 h-3/4 bg-gradient-to-tr from-agency-purple/20 to-agency-blue/20 rounded-full blur-3xl animate-pulse" />
-                    <Sparkles className="w-32 h-32 text-agency-purple/20 absolute" />
+                     <img src="https://i.ibb.co.com/PS7VTtn/spark.png" className="absolute w-1/2 h-1/2 object-contain" ></img>
                     <p className="text-white/10 font-bold text-4xl sm:text-6xl md:text-7xl absolute select-none tracking-tighter">Jannat-Dreamwork</p>
                   </div>
                 </div>

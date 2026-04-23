@@ -174,7 +174,7 @@ export default function AboutPage() {
               <div className="absolute -inset-4 bg-agency-purple/20 rounded-full blur-2xl" />
               <div className="w-40 h-40 rounded-full glass-card border-4 border-agency-purple/30 overflow-hidden relative">
                 <img
-                  src="https://i.ibb.co.com/gLBbV6Bw/team-2.jpg"
+                  src="https://i.ibb.co.com/h1WyBn5w/team-4.jpg"
                   alt="Founder"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
