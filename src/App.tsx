@@ -140,7 +140,8 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => setActivePage('home')}>
             <div className="w-9 h-9 bg-gradient-to-tr from-agency-purple to-agency-accent rounded-lg flex items-center justify-center shadow-lg shadow-agency-purple/20">
-              <Sparkles className="text-white w-5 h-5" />
+              {/* <Sparkles className="text-white w-5 h-5" /> */}
+              <img src="https://i.ibb.co.com/0pR4QJwh/jannat-logo.jpg" className="rounded-full"></img>
             </div>
             <span className="text-2xl font-extrabold tracking-tighter bg-gradient-to-r from-agency-purple to-agency-accent bg-clip-text text-transparent uppercase">Jannat-Dreamwork</span>
           </div>
