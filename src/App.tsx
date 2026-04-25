@@ -543,7 +543,7 @@ export default function App() {
                   </div>
                   <span className="text-xl font-bold tracking-tight">Jannat-Dreamwork</span>
                 </div>
-                <p className="text-base text-text-dim leading-relaxed">Jannat-Dreamwork — আগামী প্রজন্মের এআই চালিত একটি ডিজিটাল এজেন্সি। আমরা ক্রিয়েটিভিটি এবং প্রযুক্তির সমন্বয়ে আপনার ব্যবসার দ্রুত প্রবৃদ্ধি নিশ্চিত করি।</p>
+                <p className="text-base text-text-dim leading-relaxed">Jannat-Dreamwork — আগামী প্রজন্মের  একটি ডিজিটাল এজেন্সি। আমরা ক্রিয়েটিভিটি এবং প্রযুক্তির সমন্বয়ে আপনার ব্যবসার দ্রুত প্রবৃদ্ধি নিশ্চিত করি।</p>
                 <div className="flex gap-4">
                   {[
                     { Icon: Facebook, link: "https://www.facebook.com/profile.php?id=61581602565099" },
