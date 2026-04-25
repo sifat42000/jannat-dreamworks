@@ -571,7 +571,7 @@ export default function App() {
               <div>
                 <h5 className="font-bold mb-6 text-sm uppercase tracking-widest text-[#f8fafc]/80">সার্ভিসসমূহ</h5>
                 <ul className="space-y-4 text-sm text-text-dim">
-                  {["এআই ভিডিও বিজ্ঞাপন", "ক্রিয়েটিভ স্ক্রিপ্ট", "ওয়েবসাইট ডিজাইন", "ডিজিটাল মার্কেটিং", "এআই ভয়েস ওভার"].map(l => (
+                  {["Website Design & Development", " AI-Powered Video Production", "Meta Ads & Digital Marketing", "Branding & Content Creation", " Creative Video & Ad Production"].map(l => (
                     <li key={l}><button onClick={() => setActivePage('services')} className="hover:text-agency-purple transition-colors cursor-pointer text-left">{l}</button></li>
                   ))}
                 </ul>
