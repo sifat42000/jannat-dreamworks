@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "motion/react";
 import { trackViewContent, trackCTA } from "../Utils/pixel";
 import {
@@ -11,8 +12,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 
-import { SERVICES_DATA } from "./servicesData";
-import ServiceDetailPage from "./ServiceDetailPage";
+import { SERVICES } from "../data/services";
 
 const CATEGORIES = [
   { label: "সবগুলো", value: "all" },
@@ -22,19 +22,13 @@ const CATEGORIES = [
   { label: "কন্টেন্ট", value: "content" },
 ];
 
-export default function ServicesPage() {
-  const [activeTab, setActiveTab] = useState("all");
-  const [selectedService, setSelectedService] = useState<string | null>(null);
+interface ServicesPageProps {
+  onViewDetail?: (serviceId: string) => void;
+}
 
-  // 👉 Detail Page Show
-  if (selectedService) {
-    return (
-      <ServiceDetailPage
-        serviceId={selectedService}
-        onBack={() => setSelectedService(null)}
-      />
-    );
-  }
+export default function ServicesPage() {
+  const navigate = useNavigate();
+  const [activeTab, setActiveTab] = useState("all");
 
   // 👉 Category Mapping (id → category)
   const categoryMap: Record<string, string> = {
@@ -47,8 +41,8 @@ export default function ServicesPage() {
 
   const filteredServices =
     activeTab === "all"
-      ? SERVICES_DATA
-      : SERVICES_DATA.filter(
+      ? SERVICES
+      : SERVICES.filter(
         (s) => categoryMap[s.id] === activeTab
       );
 
@@ -144,7 +138,7 @@ export default function ServicesPage() {
                 {/* CTA */}
                 <button
                   onClick={() => {
-                    setSelectedService(service.id);
+                    navigate(`/service/${service.id}`);
 
                     // 🔥 Track service view
                     trackViewContent(service.id);

@@ -1,4 +1,5 @@
 import React from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import { motion } from "motion/react";
 import {
   CheckCircle2,
@@ -12,16 +13,31 @@ import {
   Zap,
 } from "lucide-react";
 
-import { SERVICES_DATA } from "./servicesData";
+import { findServiceById } from "../data/services";
 
 interface Props {
-  serviceId: string | null;
-  onBack: () => void;
+  serviceId?: string | null;
+  onBack?: () => void;
 }
 
-export default function ServiceDetailPage({ serviceId, onBack }: Props) {
-  // 🔥 SAFE FIND (no crash)
-  const service = SERVICES_DATA.find((s) => s.id === serviceId);
+export default function ServiceDetailPage({ serviceId: propServiceId, onBack }: Props) {
+  const params = useParams();
+  const navigate = useNavigate();
+  
+  // Get serviceId from props or URL params
+  const serviceId = propServiceId || params.serviceId;
+  
+  // Use robust find function with proper string matching
+  const service = findServiceById(serviceId);
+
+  // Handle back navigation
+  const handleBack = () => {
+    if (onBack) {
+      onBack();
+    } else {
+      navigate("/service");
+    }
+  };
 
   if (!service) {
     return (
@@ -32,7 +48,7 @@ export default function ServiceDetailPage({ serviceId, onBack }: Props) {
         </p>
 
         <button
-          onClick={onBack}
+          onClick={handleBack}
           className="btn-primary px-6 py-3 flex items-center gap-2"
         >
           <ArrowRight className="w-4 h-4 rotate-180" />
@@ -48,7 +64,7 @@ export default function ServiceDetailPage({ serviceId, onBack }: Props) {
       {/* BACK BUTTON */}
       <div className="max-w-7xl mx-auto px-6 mb-10">
         <button
-          onClick={onBack}
+          onClick={handleBack}
           className="flex items-center gap-2 text-sm font-bold text-text-dim hover:text-white transition"
         >
           <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center">
