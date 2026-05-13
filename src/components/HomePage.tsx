@@ -111,12 +111,12 @@ export default function HomePage() {
               </div>
               <h3 className="text-xl font-bold mb-3">{s.title}</h3>
               <p className="text-base text-text-dim leading-relaxed mb-6">{s.hero.description.slice(0, 100)}...</p>
-              <Link
-                to={`/service/${s.id}`}
-                className="mt-auto inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-agency-purple text-white py-3 rounded-xl transition-all text-sm font-bold"
-              >
-                বিস্তারিত দেখুন <ChevronRight className="w-4 h-4" />
-              </Link>
+            <Link
+  to={`/service/${s.id}`}
+  className="mt-auto inline-flex w-fit min-w-[150px] items-center justify-center gap-2 rounded-xl bg-white/5 px-6 py-3 text-sm font-bold text-white transition-all hover:bg-agency-purple"
+>
+  বিস্তারিত দেখুন <ChevronRight className="w-4 h-4" />
+</Link>
             </motion.div>
           ))}
         </div>
