@@ -60,6 +60,10 @@ export default function AboutPage() {
                 <img
                   src="https://picsum.photos/seed/agency-story/1200/800"
                   alt="Aura AI Story"
+                  width={1200}
+                  height={800}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
                   referrerPolicy="no-referrer"
                 />
@@ -176,6 +180,10 @@ export default function AboutPage() {
                 <img
                   src="https://i.ibb.co.com/h1WyBn5w/team-4.jpg"
                   alt="Founder"
+                  width={160}
+                  height={160}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />

@@ -50,7 +50,7 @@ export default function Layout() {
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <NavLink to="/" end className="flex items-center gap-3">
             <div className="w-9 h-9 bg-gradient-to-tr from-agency-purple to-agency-accent rounded-lg flex items-center justify-center shadow-lg shadow-agency-purple/20">
-              <img src="https://i.ibb.co.com/0pR4QJwh/jannat-logo.jpg" className="rounded-full" alt="Jannat-Dreamwork logo" />
+              <img src="/logo/jannat-logo.jpeg" width={36} height={36} decoding="async" loading="eager" className="rounded-full" alt="Jannat-Dreamwork logo" />
             </div>
             <span className="text-2xl font-extrabold tracking-tighter bg-gradient-to-r from-agency-purple to-agency-accent bg-clip-text text-transparent uppercase">
               Jannat-Dreamwork
