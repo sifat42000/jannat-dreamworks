@@ -13,7 +13,7 @@ import {
   Zap,
 } from "lucide-react";
 
-import { findServiceById } from "../data/services";
+import { findServiceById } from "./servicesData";
 
 interface Props {
   serviceId?: string | null;

@@ -1,9 +1,26 @@
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
-import { ChevronRight, MessageCircle, Sparkles } from "lucide-react";
-import { SERVICES } from "../data/services";
+import { ChevronRight, MessageCircle, Sparkles, Globe, TrendingUp, PenTool, Video, Mic2 } from "lucide-react";
+import { SERVICES_DATA } from "./servicesData";
 
 export default function HomePage() {
+  const getIcon = (id: string) => {
+    switch (id) {
+      case "web-design":
+        return <Globe className="w-7 h-7" />;
+      case "ai-video":
+        return <Video className="w-7 h-7" />;
+      case "marketing":
+        return <TrendingUp className="w-7 h-7" />;
+      case "branding":
+        return <Mic2 className="w-7 h-7" />;
+      case "creative-video":
+        return <PenTool className="w-7 h-7" />;
+      default:
+        return <Globe className="w-7 h-7" />;
+    }
+  };
+
   return (
     <div className="animate-in fade-in duration-700">
       <section className="relative px-6 pt-24 pb-32 max-w-7xl mx-auto">
@@ -83,17 +100,23 @@ export default function HomePage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {SERVICES.map((s, i) => (
+          {SERVICES_DATA.map((s, i) => (
             <motion.div
               key={s.id}
               whileHover={{ y: -10 }}
-              className="glass-card p-8 group border-white/5 hover:border-agency-purple/30 transition-all cursor-pointer"
+              className="glass-card p-8 group border-white/5 hover:border-agency-purple/30 transition-all"
             >
-              <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <div className="text-agency-purple w-7 h-7">{s.icon}</div>
+              <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform text-agency-purple">
+                {getIcon(s.id)}
               </div>
               <h3 className="text-xl font-bold mb-3">{s.title}</h3>
-              <p className="text-base text-text-dim leading-relaxed mb-6">{s.desc}</p>
+              <p className="text-base text-text-dim leading-relaxed mb-6">{s.hero.description.slice(0, 100)}...</p>
+              <Link
+                to={`/service/${s.id}`}
+                className="mt-auto inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-agency-purple text-white py-3 rounded-xl transition-all text-sm font-bold"
+              >
+                বিস্তারিত দেখুন <ChevronRight className="w-4 h-4" />
+              </Link>
             </motion.div>
           ))}
         </div>

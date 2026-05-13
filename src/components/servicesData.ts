@@ -355,3 +355,8 @@ export const SERVICES_DATA = [
     ],
   },
 ];
+
+export const findServiceById = (id: string | undefined) => {
+  if (!id) return undefined;
+  return SERVICES_DATA.find((service) => String(service.id) === String(id));
+};

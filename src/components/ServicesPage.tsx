@@ -12,7 +12,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 
-import { SERVICES } from "../data/services";
+import { SERVICES_DATA } from "./servicesData";
 
 const CATEGORIES = [
   { label: "সবগুলো", value: "all" },
@@ -41,8 +41,8 @@ export default function ServicesPage() {
 
   const filteredServices =
     activeTab === "all"
-      ? SERVICES
-      : SERVICES.filter(
+      ? SERVICES_DATA
+      : SERVICES_DATA.filter(
         (s) => categoryMap[s.id] === activeTab
       );
 
